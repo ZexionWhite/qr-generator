@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="subMain">
+            <div id="containerImportant">
+                <header>
+                    <img class="logoImage" src="resources/icon.png">
+                    <h1>Generator</h1>
+                </header>
+                <div class="coolinput">
+                    <label for="qrURL" class="text">URL:</label>
+                    <input type="text" id="qrURL" placeholder="Example: https://my-url.com" name="input" class="input">
+                </div>
+                <div id="buttonOptions">
+                    <input type="radio" name="opciones" id="normal" checked>
+                    <label for="normal" class="options" id="normalLabel">Normal</label>
+                    <input type="radio" name="opciones" id="highQuality">
+                    <label for="highQuality" class="options" id="hqLabel">HQ</label>
+                    <input type="radio" name="opciones" id="ultraHighQuality">
+                    <label for="ultraHighQuality" class="options" id="uhqLabel">Ultra HQ</label>
+                </div>
+                <button id="generator">Generar</button>
+                <button id="viewFolder">Ver en Carpeta</button>
+            </div>
+            <footer>
+                &copy; 2025 | Hecho en Argentina
+            </footer>
+        </div>
+        <div id="qrPreviewContainer">
+            <img id="qrPreview" src="./resources/qr-placeholder.png" alt="QR">
+        </div>
+    </div>
+    <script src="render.js"></script>
+</body>
+</html>
