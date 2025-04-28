@@ -5,16 +5,16 @@
   "main": "main.js",
   "author": "ZexionWhite",
   "license": "MIT",
-  "scripts": {
-    "start": "electron .",
-    "build": "electron-builder"
-  },
   "keywords": [
     "Electron",
     "QR",
     "QR code",
     "Generator"
   ],
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
   "build": {
     "appId": "qr.generator.zxn",
     "productName": "QR Generator",
@@ -24,6 +24,12 @@
     },
     "files": [
       "**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "qr",
+        "to": "qr"
+      }
     ],
     "win": {
       "icon": "resources/icon.png",
@@ -41,11 +47,11 @@
       "shortcutName": "QR Generator"
     }
   },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
   "devDependencies": {
     "electron": "^35.2.1",
     "electron-builder": "^26.0.12"
-  },
-  "dependencies": {
-    "qrcode": "^1.5.4"
   }
 }
