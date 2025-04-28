@@ -1,41 +1,46 @@
 {
   "name": "qr-generator",
   "version": "1.0.0",
+  "description": "A simple desktop app to generate high-quality QR codes.",
   "main": "main.js",
+  "author": "ZexionWhite",
+  "license": "MIT",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "build": {
-  "appId": "qr.generator.zxn",
-  "productName": "QR Generator",
-  "directories": {
-    "output": "dist"
-  },
-  "files": [
-    "**/*"
+  "keywords": [
+    "Electron",
+    "QR",
+    "QR code",
+    "Generator"
   ],
-  "win": {
-    "icon": "resources/icon.png",
-    "target": [
-      "nsis"
-    ]
+  "build": {
+    "appId": "qr.generator.zxn",
+    "productName": "QR Generator",
+    "copyright": "Copyright © 2025 Zexion",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "icon": "resources/icon.png",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "QR Generator"
+    }
   },
-  "nsis": {
-    "oneClick": false,
-    "perMachine": false,
-    "allowElevation": true,
-    "allowToChangeInstallationDirectory": true,
-    "createDesktopShortcut": true,
-    "createStartMenuShortcut": true,
-    "shortcutName": "QR Generator"
-  },
-  "copyright": "Copyright © 2025 Zexion"
-},
   "devDependencies": {
     "electron": "^35.2.1",
     "electron-builder": "^26.0.12"

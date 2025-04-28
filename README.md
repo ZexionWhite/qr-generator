@@ -9,7 +9,7 @@ A simple and lightweight desktop application for generating high-quality QR code
 ## ✨ Features
 
 - Generate QR codes from any URL
-- Choose between Normal (512px), HQ (1024px), and Ultra HQ (3000px) quality
+- Choose between Normal (512px), HQ (1024px), and Ultra HQ (3072px) quality
 - Save QR codes locally inside a dedicated folder
 - View the generated QR codes folder easily
 - Modern and dark-themed user interface
